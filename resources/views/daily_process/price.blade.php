@@ -34,7 +34,7 @@
                                     <input type="text" class="form-control" name="code" placeholder="e.g 520" {!! DNS2D::getBarcodeHTML("$productCode") !!}>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label"><b>BarCode</b></label>
+                                    <label class="form-label"><b>Barcode</b></label>
                                     <input type="text" id="barcode" class="form-control" name="barcode" placeholder="e.g barcode">
                                 </div>
                                 <div class="col-12">
