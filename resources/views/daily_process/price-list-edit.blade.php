@@ -30,7 +30,7 @@
                         <input type="text" class="form-control" name="name" value="{{$PriceListEdit->name}}">
                     </div>
                     <div class="col-12">
-                        <label class="form-label"><b>Update price</b> </label>
+                        <label class="form-label"><b>Update price list</b> </label>
                         <input type="text" class="form-control" name="c_price" value="{{$PriceListEdit->c_price}}">
                     </div>
 
