@@ -42,7 +42,7 @@
                                     <input type="text" class="form-control" name="qty" placeholder="e.g 520">
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label"><b> Old Price</b></label>
+                                    <label class="form-label"><b> Old Price list</b></label>
                                     <input type="text" class="form-control" name="o_price" placeholder="e.g 100">
                                 </div>
 
