@@ -9,7 +9,7 @@ Add Expenses Category
         <div class="col-lg-7">
             <div class="card shadow-lg border-0 rounded-lg mt-5">
                 <div class="card-header">
-                    <h3 class="text-center font-weight-light my-4">Add Category Form</h3>
+                    <h3 class="text-center font-weight-light my-4">Add Category</h3>
                 </div>
                 <!-- message -->
                 @if(session()->has('message'))
