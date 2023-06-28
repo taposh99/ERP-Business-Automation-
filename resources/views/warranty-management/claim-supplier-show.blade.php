@@ -34,14 +34,14 @@
                             <div class="border p-3 rounded">
 
                                 <div class="col-12">
-                                    <label class="form-label"><b>Image</b></label>
+                                    <label class="form-label"><b>Images</b></label>
                                     <input type="file" class="form-control" name="image" placeholder="e.g  image">
                                 </div>
                                 @error('image')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                                 <div class="col-12">
-                                    <label class="form-label"><b>Product</b></label>
+                                    <label class="form-label"><b>Products</b></label>
                                     <input type="text" class="form-control" name="product" placeholder="e.g  Hp core-i5" required>
                                 </div>
                                 <div class="col-12">
