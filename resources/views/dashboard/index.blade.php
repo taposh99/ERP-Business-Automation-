@@ -57,7 +57,7 @@
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-chart-bar me-1"></i>
-                    Bar Chart Example
+                    Bar Chart
                 </div>
                 <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
             </div>
@@ -66,7 +66,7 @@
     <div class="card mb-4">
         <div class="card-header">
             <i class="fas fa-table me-1"></i>
-            DataTable Example
+            DataTable bar chat
         </div>
         <div class="card-body">
             <table id="datatablesSimple">
@@ -93,14 +93,14 @@
                 <tbody>
                     <tr>
                         <td>Tiger Nixon</td>
-                        <td>System Architect</td>
+                        <td>System </td>
                         <td>Edinburgh</td>
-                        <td>61</td>
+                        <td>6165</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                     </tr>
                     <tr>
-                        <td>Garrett Winters</td>
+                        <td>Garrett</td>
                         <td>Accountant</td>
                         <td>Tokyo</td>
                         <td>63</td>
