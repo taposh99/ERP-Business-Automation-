@@ -30,11 +30,11 @@
                                     <input type="text" class="form-control" name="name" placeholder="e.g  hp" required>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label"><b>Code</b></label>
+                                    <label class="form-label"><b>Code List</b></label>
                                     <input type="text" class="form-control" name="code" placeholder="e.g 520" {!! DNS2D::getBarcodeHTML("$productCode") !!}>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label"><b>Barcode</b></label>
+                                    <label class="form-label"><b>Barcode List</b></label>
                                     <input type="text" id="barcode" class="form-control" name="barcode" placeholder="e.g barcode">
                                 </div>
                                 <div class="col-12">
@@ -42,7 +42,7 @@
                                     <input type="text" class="form-control" name="qty" placeholder="e.g 520">
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label"><b> Old Price list</b></label>
+                                    <label class="form-label"><b> Old Price</b></label>
                                     <input type="text" class="form-control" name="o_price" placeholder="e.g 100">
                                 </div>
 
@@ -75,7 +75,7 @@
                     <th>SN</th>
                     <th>Name</th>
                     <th>Code</th>
-                    <th>BarCode</th>
+                    <th>BarCode List</th>
                     <th>Available Qty</th>
                     <th>Old Price </th>
                     <th>Current Price </th>
