@@ -73,12 +73,12 @@
 
                 <tr>
                     <th>SN</th>
-                    <th>Name</th>
-                    <th>Code</th>
+                    <th>Name list</th>
+                    <th>Code list</th>
                     <th>BarCode List</th>
                     <th>Available Qty</th>
-                    <th>Old Price </th>
-                    <th>Current Price </th>
+                    <th>Old Price list </th>
+                    <th>Current Price list </th>
                     <th>Action</th>
 
                 </tr>
