@@ -95,17 +95,17 @@
                         <td>Tiger Nixon</td>
                         <td>System </td>
                         <td>Edinburgh</td>
-                        <td>6165</td>
+                        <td>565</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                     </tr>
                     <tr>
-                        <td>Garrett</td>
+                        <td>enetral</td>
                         <td>Accountant</td>
                         <td>Tokyo</td>
-                        <td>63</td>
+                        <td>6534</td>
                         <td>2011/07/25</td>
-                        <td>$170,750</td>
+                        <td>$1705,750</td>
                     </tr>
                     <tr>
                         <td>Ashton Cox</td>
@@ -117,7 +117,7 @@
                     </tr>
                     <tr>
                         <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
+                        <td>Senior java Developer</td>
                         <td>Edinburgh</td>
                         <td>22</td>
                         <td>2012/03/29</td>

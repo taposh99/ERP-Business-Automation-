@@ -63,7 +63,7 @@ Expenses
                                 <td>
                                     <h2><a href="#">Cream Inc</a></h2>
                                 </td>
-                                <td>Paypal</td>
+                                <td>Paypal list</td>
                                 <td>8 Feb 2019</td>
                                 <td>$500</td>
                             </tr>
