@@ -216,22 +216,6 @@ Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
 //barcode
     Route::get('/barcode',[BarcodeController::class, 'barcodeIndex'])->name('barcode');
 
-
-
-
-
-
-
-
-
-
-    /*
-    |--------------------------------------------------------------------------
-    |                    Md.Selim Hossain Suhag
-    |--------------------------------------------------------------------------
-    | */
-
-
     // inventory
     Route::group(['prefix' => 'inventory'], function () {
         // branch
@@ -381,12 +365,7 @@ Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
         Route::get('/trial_balance', [ChartOfAccount::class, 'trialBalance'])->name('admin.trial.balance');
         Route::get('/balance_sheet', [ChartOfAccount::class, 'balanceSheet'])->name('admin.balance_sheet');
         Route::get('/finance_analysis', [ChartOfAccount::class, 'financeAnalysis'])->name('admin.finance.analysis');
-    });
-    /*
-    |--------------------------------------------------------------------------
-    |                    Sohel Rana
-    |--------------------------------------------------------------------------
-    | */
+   
     //master_setup
     Route::group(['prefix' => 'master_setup'], function () {
 
@@ -462,11 +441,6 @@ Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
     });
 
 
-    /*
-    |--------------------------------------------------------------------------
-    |                    Md.Jahid hasan
-    |--------------------------------------------------------------------------
-    | */
 
     //user
     Route::resource('users', UserController::class);
