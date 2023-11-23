@@ -64,7 +64,7 @@ Route::get('/dashboard', function () {
 
 require __DIR__ . '/auth.php';
 
-Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
+
 
     // daily process
     Route::group(['prefix' => 'daily-process'], function () {
@@ -365,7 +365,7 @@ Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
         Route::get('/trial_balance', [ChartOfAccount::class, 'trialBalance'])->name('admin.trial.balance');
         Route::get('/balance_sheet', [ChartOfAccount::class, 'balanceSheet'])->name('admin.balance_sheet');
         Route::get('/finance_analysis', [ChartOfAccount::class, 'financeAnalysis'])->name('admin.finance.analysis');
-   
+    });
     //master_setup
     Route::group(['prefix' => 'master_setup'], function () {
 
@@ -438,47 +438,51 @@ Route::group(['prefix' => 'backend', 'middleware' => 'auth'], function () {
         Route::get('/edit/zone/{id}', [ZoneController::class, 'editZone'])->name('admin.edit.zone');
         Route::post('/update/zone/{id}', [ZoneController::class, 'updateZone'])->name('admin.update.zone');
         Route::get('/delete/zone/{id}', [ZoneController::class, 'deleteZone'])->name('admin.delete.zone');
+
+        Route::resource('users', UserController::class);
+
+        //Roles
+        Route::resource('roles', RoleController::class);
+    
+        //Banks
+        Route::resource('banks', BankController::class);
+    
+        //Bank Account
+        Route::resource('bank-account', BankAccountController::class);
+    
+    
+        //Mobile Account
+        Route::resource('mobile-account', MobileAccountController::class);
+    
+    
+        //Transanction
+        Route::resource('transanction', TransanctionController::class);
+        Route::get('balance/', [TransanctionController::class, 'get_balance'])->name('accounts.get_balance');
+    
+        //Manage Cheque
+        Route::resource('manage-cheque', ChequeManagementController::class);
+        Route::resource('manage-cheque', ChequeManagementController::class);
+    
+        //Department Controller
+        Route::resource('department', DepartmentController::class);
+    
+        //Designation Controller
+        Route::resource('designation', DesignationController::class);
+    
+        //Employee Controller
+        Route::resource('employee', EmployeeController::class);
+    
+        //LeaveType Controller
+        Route::resource('leavetypes', LeaveTypeController::class);
+    
+        //LeaveApplication Controller
+        Route::resource('leave-application', LeaveApplicationController::class);
+    
     });
 
 
 
-    //user
-    Route::resource('users', UserController::class);
-
-    //Roles
-    Route::resource('roles', RoleController::class);
-
-    //Banks
-    Route::resource('banks', BankController::class);
-
-    //Bank Account
-    Route::resource('bank-account', BankAccountController::class);
+    
+   
 
 
-    //Mobile Account
-    Route::resource('mobile-account', MobileAccountController::class);
-
-
-    //Transanction
-    Route::resource('transanction', TransanctionController::class);
-    Route::get('balance/', [TransanctionController::class, 'get_balance'])->name('accounts.get_balance');
-
-    //Manage Cheque
-    Route::resource('manage-cheque', ChequeManagementController::class);
-    Route::resource('manage-cheque', ChequeManagementController::class);
-
-    //Department Controller
-    Route::resource('department', DepartmentController::class);
-
-    //Designation Controller
-    Route::resource('designation', DesignationController::class);
-
-    //Employee Controller
-    Route::resource('employee', EmployeeController::class);
-
-    //LeaveType Controller
-    Route::resource('leavetypes', LeaveTypeController::class);
-
-    //LeaveApplication Controller
-    Route::resource('leave-application', LeaveApplicationController::class);
-});
