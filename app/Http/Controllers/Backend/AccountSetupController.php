@@ -215,7 +215,6 @@ class AccountSetupController extends Controller
         Group::create([
             'name' => $request->name,
             'description' => $request->description,
-
             'all_class_id' => $request->class_id,
         ]);
         return redirect()->route('admin.manage.group')->with('message', 'group added successfully');
@@ -244,5 +243,4 @@ class AccountSetupController extends Controller
         $group->delete();
         return redirect()->route('admin.manage.journal')->with('error', 'journal Deleted');
     }
-
 }
