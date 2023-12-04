@@ -226,6 +226,7 @@ class AccountSetupController extends Controller
         $group = Group::find($id);
         return view('account_setup.journal.edit_journal', compact('group'));
     }
+
     public function updateJournal(Request $request, $id)
     {
         dd('here');
@@ -236,6 +237,7 @@ class AccountSetupController extends Controller
         ]);
         return redirect()->route('admin.manage.journal')->with('message', 'journal Updated Successfully');
     }
+
     public function deleteJournal($id)
     {
         dd('here');

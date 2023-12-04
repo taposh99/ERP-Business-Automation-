@@ -10,7 +10,7 @@
 <div class="d-flex justify-content-center mt-4">
 <div class="card" style="width: 500px">
     <div class="card-header d-flex justify-content-center bg-primary text-white">
-      <h5 class="modal-title" id="bankCreateModelLabel">Create New Department</h5>
+      <h5 class="modal-title" id="bankCreateModelLabel">New Department</h5>
     </div>
     <div class="card-body">
       <div class="border p-3 rounded">
@@ -32,7 +32,7 @@
                           
               <div class="modal-footer">
                   @csrf
-                  <button type="submit" class="btn btn-primary">Create Department</button>
+                  <button type="submit" class="btn btn-primary">Create new Department</button>
               </div>
           </form>
 
