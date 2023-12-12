@@ -79,6 +79,8 @@ class DepartmentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    //  update code
     public function update(Request $request,Department $department)
     {
 

@@ -20,7 +20,7 @@
       <div class="border p-3 rounded">
         <form method="POST" action="{{route('department.update', $department->id)}}">
         <div class="col-12">
-          <label class="form-label">Department Name</label>
+          <label class="form-label">Department Name list</label>
           <input type="text" class="form-control" name="name" value="{{old('name', $department->name)}}">
         </div>
         @error('name')
