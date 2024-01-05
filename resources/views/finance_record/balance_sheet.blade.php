@@ -15,11 +15,13 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-center ">
                             <h5>BALANCE SHEET</h5>
+                            <h5>Trail SHEET</h5>
                         </div>
                         <table class="table table-bordered">
                                 <thead class="table-active">
                                 <tr>
                                     <th scope="col">ASSETS</th>
+                                    <th scope="col">New </th>
                                     <th scope="col">Opening</th>
                                     <th scope="col">During Time</th>
                                     <th scope="col">Closing</th>
